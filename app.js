@@ -29,3 +29,15 @@ function getMax(data) {
         "maxIndex": maxIndex,
     };
 }
+
+
+columnDiv.forEach((column) => {
+    column.addEventListener("mouseover", () => {
+        column.previousElementSibling.classList.remove("hidden");
+    })
+})
+columnDiv.forEach((column) => {
+    column.addEventListener("mouseout", () => {
+        column.previousElementSibling.classList.add("hidden");
+    })
+})

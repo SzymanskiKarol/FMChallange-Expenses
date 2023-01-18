@@ -25,7 +25,8 @@ body {
 }
 
 main {
-    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 
@@ -64,6 +65,7 @@ section {
     background-color: var(--Soft-red);
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 .5rem;
 }
 
 .column:hover {
@@ -112,4 +114,42 @@ h1 {
 h2 {
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 95%;
+    }
+
+    .day-container {
+        width: 12%;
+    }
+
+    .column {
+        width: 100%;
+        background-color: var(--Soft-red);
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 .5rem;
+    }
+
+    nav {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 1rem 0.5rem;
+    }
+
+    .column {
+        margin: 0 0.1rem;
+    }
+
+    .day-container p {
+        rotate: -90deg;
+        margin-top: .5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
 }
