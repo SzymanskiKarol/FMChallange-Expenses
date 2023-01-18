@@ -46,7 +46,7 @@ section {
 }
 
 .day-container {
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -61,8 +61,7 @@ section {
 
 .column {
     width: 40px;
-    height: 100px;
-    background-color: var(--Medium-brown);
+    background-color: var(--Soft-red);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -74,7 +73,8 @@ section {
 .amount {
     background-color: var(--Dark-brown);
     color: var(--Very-pale-orange);
-    padding: 10px;
+    padding: 5px;
+    font-size: 12px;
     border-radius: 5px;
     margin-bottom: 5px;
     opacity: 1;
